@@ -1,152 +1,129 @@
-/* Reset default margins and padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JMK Clothing</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="/">JMK Clothing</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#t-shirts">T-Shirts</a></li>
+                <li><a href="#hoodies">Hoodies</a></li>
+                <li><a href="#tracksuits">Tracksuits</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-body {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
-}
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Premium Streetwear</h1>
+            <p>Explore the Latest Collection of T-Shirts, Hoodies & Tracksuits</p>
+            <a href="#shop" class="cta-button">Shop Now</a>
+        </div>
+    </section>
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-}
+    <!-- T-Shirts Section -->
+    <section id="t-shirts" class="product-section">
+        <h2>T-Shirts Collection</h2>
+        <div class="product-gallery">
+            <div class="product">
+                <img src="images/tshirt1.jpg" alt="T-Shirt 1">
+                <p>Basic White T-Shirt</p>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="product">
+                <img src="images/tshirt2.jpg" alt="T-Shirt 2">
+                <p>Graphic Print T-Shirt</p>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="product">
+                <img src="images/tshirt3.jpg" alt="T-Shirt 3">
+                <p>Vintage Black T-Shirt</p>
+                <a href="#">Shop Now</a>
+            </div>
+        </div>
+    </section>
 
-header .logo a {
-    color: white;
-    font-size: 24px;
-    text-decoration: none;
-}
+    <!-- Hoodies Section -->
+    <section id="hoodies" class="product-section">
+        <h2>Hoodies Collection</h2>
+        <div class="product-gallery">
+            <div class="product">
+                <img src="images/hoodie1.jpg" alt="Hoodie 1">
+                <p>Classic Grey Hoodie</p>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="product">
+                <img src="images/hoodie2.jpg" alt="Hoodie 2">
+                <p>Black Zip-Up Hoodie</p>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="product">
+                <img src="images/hoodie3.jpg" alt="Hoodie 3">
+                <p>Oversized Hoodie</p>
+                <a href="#">Shop Now</a>
+            </div>
+        </div>
+    </section>
 
-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-}
+    <!-- Tracksuits Section -->
+    <section id="tracksuits" class="product-section">
+        <h2>Tracksuits Collection</h2>
+        <div class="product-gallery">
+            <div class="product">
+                <img src="images/tracksuit1.jpg" alt="Tracksuit 1">
+                <p>Comfort Fit Tracksuit</p>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="product">
+                <img src="images/tracksuit2.jpg" alt="Tracksuit 2">
+                <p>Luxury Tracksuit Set</p>
+                <a href="#">Shop Now</a>
+            </div>
+            <div class="product">
+                <img src="images/tracksuit3.jpg" alt="Tracksuit 3">
+                <p>Sporty Tracksuit</p>
+                <a href="#">Shop Now</a>
+            </div>
+        </div>
+    </section>
 
-nav ul li {
-    margin: 0 15px;
-}
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <h2>About Us</h2>
+        <p>At JMK Clothing, we believe in blending style with comfort. Our clothing is designed to give you that perfect fit, whether you're lounging or out and about.</p>
+    </section>
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
+    <!-- Contact Section -->
+    <section id="contact" class="contact-us">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="POST">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
 
-#hero {
-    background-color: #222;
-    color: white;
-    padding: 100px 20px;
-    text-align: center;
-}
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 JMK Clothing. All rights reserved.</p>
+    </footer>
 
-#hero h1 {
-    font-size: 48px;
-}
-
-#hero p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    background-color: #ff6f61;
-    color: white;
-    padding: 15px 30px;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-}
-
-#t-shirts, #hoodies, #tracksuits {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-#t-shirts h2, #hoodies h2, #tracksuits h2 {
-    font-size: 32px;
-    margin-bottom: 30px;
-}
-
-.product-gallery {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.product {
-    margin: 10px;
-    width: 250px;
-    text-align: center;
-}
-
-.product img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.product p {
-    margin: 10px 0;
-    font-size: 18px;
-}
-
-.product a {
-    color: #ff6f61;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.about-us {
-    background-color: #fff;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.contact-us {
-    background-color: #f4f4f4;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.contact-us form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contact-us input, .contact-us textarea {
-    width: 80%;
-    max-width: 400px;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-us button {
-    padding: 12px 25px;
-    background-color: #ff6f61;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-footer {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-}
+    <script src="script.js"></script>
+</body>
+</html>
